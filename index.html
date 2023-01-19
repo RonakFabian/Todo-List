@@ -1,0 +1,29 @@
+<html>
+<title>ToDo List</title>
+<link rel="stylesheet" href="ToDo.css">
+<script type="text/javascript" src="ToDo.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+<head></head>
+
+<body>
+  <div class="heading">Todo List</div>
+  <div class="todo-box">
+    <div class="header">
+      <input id="input" type="text" placeholder="Create a new todo..">
+      <input id="date" type="date">
+      <button class="add-btn" onclick="addToDo()">Add</button>
+    </div>
+    <div id="todo"></div>
+  </div>
+
+  <script>
+    loadData();
+    render();
+  </script>
+
+</body>
+
+</html>

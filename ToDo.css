@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #1e2124;
+  --secondary-color: #282b30;
+  --tertiary-color:#36393e;
+  --accent-color:#7289da;
+ 
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.todo-box {
+  top: 30%;
+  left: 50%;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  min-width: 650px;
+  position:absolute;
+    transform: translate(-50%, -50%);
+  box-shadow: rgb(0, 0, 0) 0px 7px 35px 0px;
+}
+
+
+
+.task {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 40px;
+  border-radius: 5px;
+
+}
+
+.task-title {
+  margin-left: 10px;
+  font-family: Inconsolata;
+  color: rgb(243, 239, 224);
+  flex: 5;
+
+}
+
+.delete-btn {
+
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  font-family: Inconsolata;
+  font: 1em ;
+  background-color:var(--accent-color);
+  border-width:0px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  
+
+
+
+}
+#task-date
+{
+  margin-right: 10px;
+  height: 30px;
+  right: 0px;
+  font-family: Inconsolata;
+  font: 1em ;
+  background-color:var(--accent-color);
+  border-width:0px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+
+}
+
+#input {
+  width: 70%;
+  font-family: Inconsolata;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 2px;
+  height: 45px;
+  border: solid;
+  border-color: rgb(197, 197, 197);
+  font-size: 1rem;
+  color: grey;
+}
+
+#input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+
+
+
+
+
+.add-btn {
+  color: white;
+  font-family: Inconsolata;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 1rem;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 45px;
+}
+
+
+
+
+#date {
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  font-family: Inconsolata;
+  font-size: 1rem;
+
+  background-color: var(--accent-color);
+  border: none;
+  text-align: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+::-webkit-calendar-picker-indicator {
+  margin-right: 5px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.heading{
+  text-align: center;
+  font-family: Inconsolata;
+  color: white;
+  padding-top: 120px;
+  font-size: 3rem;
+  margin-bottom: 100px;
+
+
+}
